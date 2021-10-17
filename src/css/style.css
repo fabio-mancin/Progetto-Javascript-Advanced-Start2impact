@@ -1,0 +1,102 @@
+html,
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Cabin', sans-serif;
+  color: white;
+  text-transform: uppercase;
+}
+
+body{
+
+  background: center center no-repeat  fixed;
+  -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+main{
+  padding: 15px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* ! Text */
+
+h1{margin-bottom: 0;font-size: 4rem;text-align: center; color: orange;}
+
+h2{margin-top: 0;font-size: 3rem;color: orange; font-weight: 300;}
+
+h3{font-size: 1.5rem;text-align: center;}
+
+
+
+/* ! Helpers */
+
+.background-color{background-color: #000000d0;}
+.margin-bottom{margin-bottom: 60px;}
+
+/* ! Section*/
+
+.top{display: flex;justify-content: space-between;margin-bottom: 0;}
+
+.middle{display: flex;margin-bottom: 0;justify-content: center;}
+
+
+/* ! Time & CurrentPosition */
+
+#time-el{font-size: 1.2rem;display: flex;align-items: center;}
+
+#aqi-current-position{margin-bottom: 10px;font-style: italic !important;text-align: center;}
+
+
+
+/* ! Button & input */
+
+.button-el,
+.input-el{display: flex;align-items: center;border-radius: 3px;margin-right: 5px;}
+
+.button-el{padding: 10px;width: 40px;justify-content: center;background: orange;border: none;border-radius: 50%;cursor: pointer;}
+
+.input-el{text-align: center;max-width: 600px;padding: 10px;border: 1px solid black;}
+
+/* ! weather */
+
+.weather{display: flex;align-items: center;flex-wrap: wrap;justify-content: flex-end;align-self: flex-start;}
+
+.weather > img{width: 70px;}
+
+.weather-city{width: 100%;text-align: right;margin: 0;margin-top: -10px;font-size: 1.3rem;}
+
+.weather-temp{margin: 0;font-size: 1.7rem;margin-left: -10px;}
+
+
+
+
+/* ! Grid */
+
+.grid { margin: 0 auto; max-width: 1200px; display: flex; flex-flow: row; flex-wrap: wrap;}
+.grid-center{justify-content: center;}
+.col{ flex: 1;}
+
+[class*='col-'] { position: relative;}
+
+.col-50{width: 50%; text-align: center; padding: 20px; border-radius: 10px; margin-top: 50px;}
+
+/* ! MediaQuery */
+
+@media (max-width: 768px) {.col-50{width: 100%;}h1{font-size: 3rem;}h3{font-size: 1.5rem;}#aqi-current-position{font-size: 12px;}}
+
+
+
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
